@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Weather Prepared</string>
+    <string name="enable_jacket_notifications">Enable jacket notifications</string>
+    <string name="enable_coat_notifications">Enable coat notifications</string>
+    <string name="enable_umbrella_notifications">Enable umbrella notifications</string>
+    <string name="enable_sunscreen_notifications">Enable sunscreen notifications</string>
 </resources>
