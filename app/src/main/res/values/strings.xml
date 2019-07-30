@@ -4,4 +4,8 @@
     <string name="enable_coat_notifications">Enable coat notifications</string>
     <string name="enable_umbrella_notifications">Enable umbrella notifications</string>
     <string name="enable_sunscreen_notifications">Enable sunscreen notifications</string>
+    <string name="temp_for_jacket">Temp for jacket</string>
+    <string name="temp_for_coat">Temp for coat</string>
+    <string name="uv_index_for_sunscreen">UV Index for sunscreen</string>
+    <string name="percipitation_for_umbrella">Percipitation for umbrella</string>
 </resources>
