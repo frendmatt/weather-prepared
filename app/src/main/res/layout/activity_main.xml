@@ -54,7 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="@string/enable_jacket_notifications"
-            android:theme="@style/Switch" />
+            android:theme="@style/Switch"
+            android:typeface="normal" />
 
         <Switch
             android:id="@+id/coat_switch"
