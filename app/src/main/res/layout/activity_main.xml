@@ -8,29 +8,31 @@
 
     <TextView
         android:id="@+id/title_textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="24dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="#00FFFFFF"
+        android:layoutDirection="inherit"
         android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#FFFFFF"
+        android:textColor="#3148C4"
         android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/title_colorView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <View
         android:id="@+id/title_colorView"
         android:layout_width="412dp"
         android:layout_height="60dp"
-        android:background="#03A9F4"
+        android:background="#E4E4E4"
         android:translationZ="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -39,102 +41,106 @@
 
     <LinearLayout
         android:id="@+id/switch_layout"
-        android:layout_width="395dp"
+        android:layout_width="wrap_content"
         android:layout_height="160dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layoutDirection="ltr"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_colorView">
 
         <Switch
             android:id="@+id/jacket_switch"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
+            android:layoutDirection="rtl"
             android:text="@string/enable_jacket_notifications"
             android:theme="@style/Switch"
             android:typeface="normal" />
 
         <Switch
             android:id="@+id/coat_switch"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
+            android:layoutDirection="rtl"
             android:text="@string/enable_coat_notifications"
             android:theme="@style/Switch" />
 
         <Switch
             android:id="@+id/umbrella_switch"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
+            android:layoutDirection="rtl"
             android:text="@string/enable_umbrella_notifications"
             android:theme="@style/Switch" />
 
         <Switch
             android:id="@+id/sunscreen_switch"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:checked="false"
+            android:layoutDirection="rtl"
             android:text="@string/enable_sunscreen_notifications"
             android:theme="@style/Switch"
             tools:checked="false" />
     </LinearLayout>
 
     <EditText
-        android:id="@+id/jacket_editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/temp_for_jacket"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch_layout" />
-
-    <EditText
         android:id="@+id/umbrella_editText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="@string/percipitation_for_umbrella"
+        android:hint="@string/precipitation_for_umbrella"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switch_layout"
         app:layout_constraintTop_toBottomOf="@+id/coat_editText" />
 
     <EditText
         android:id="@+id/sunscreen_editText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/uv_index_for_sunscreen"
         android:inputType="number|numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switch_layout"
         app:layout_constraintTop_toBottomOf="@+id/umbrella_editText" />
 
     <EditText
         android:id="@+id/coat_editText"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/temp_for_coat"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switch_layout"
         app:layout_constraintTop_toBottomOf="@+id/jacket_editText" />
+
+    <EditText
+        android:id="@+id/jacket_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/temp_for_jacket"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switch_layout"
+        app:layout_constraintTop_toBottomOf="@+id/title_colorView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Weather Prepared</string>
-    <string name="enable_jacket_notifications">Enable jacket notifications</string>
-    <string name="enable_coat_notifications">Enable coat notifications</string>
-    <string name="enable_umbrella_notifications">Enable umbrella notifications</string>
-    <string name="enable_sunscreen_notifications">Enable sunscreen notifications</string>
-    <string name="temp_for_jacket">Temp for jacket</string>
-    <string name="temp_for_coat">Temp for coat</string>
+    <string name="enable_jacket_notifications">Jacket</string>
+    <string name="enable_coat_notifications">Coat</string>
+    <string name="enable_umbrella_notifications">Umbrella</string>
+    <string name="enable_sunscreen_notifications">Sunscreen</string>
+    <string name="temp_for_jacket">Min. temp for jacket</string>
+    <string name="temp_for_coat">Min. temp for coat</string>
     <string name="uv_index_for_sunscreen">UV Index for sunscreen</string>
-    <string name="percipitation_for_umbrella">Percipitation for umbrella</string>
+    <string name="precipitation_for_umbrella">Precipitation for umbrella</string>
 </resources>
