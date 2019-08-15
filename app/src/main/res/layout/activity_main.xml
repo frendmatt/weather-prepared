@@ -12,30 +12,30 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:background="#00FFFFFF"
         android:layoutDirection="inherit"
         android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#3148C4"
+        android:textColor="@color/colorTitle"
+        android:textSize="24sp"
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="@+id/title_colorView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.571" />
 
     <View
         android:id="@+id/title_colorView"
         android:layout_width="412dp"
         android:layout_height="60dp"
-        android:background="#E4E4E4"
+        android:background="@color/colorPrimary"
         android:translationZ="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,9 +55,10 @@
 
         <Switch
             android:id="@+id/jacket_switch"
-            android:layout_width="wrap_content"
+            android:layout_width="152dp"
             android:layout_height="40dp"
             android:layoutDirection="rtl"
+            android:switchPadding="@dimen/switchPadding"
             android:text="@string/enable_jacket_notifications"
             android:theme="@style/Switch"
             android:typeface="normal" />
@@ -67,6 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layoutDirection="rtl"
+            android:switchPadding="@dimen/switchPadding"
             android:text="@string/enable_coat_notifications"
             android:theme="@style/Switch" />
 
@@ -75,6 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layoutDirection="rtl"
+            android:switchPadding="@dimen/switchPadding"
             android:text="@string/enable_umbrella_notifications"
             android:theme="@style/Switch" />
 
@@ -84,6 +87,7 @@
             android:layout_height="40dp"
             android:checked="false"
             android:layoutDirection="rtl"
+            android:switchPadding="@dimen/switchPadding"
             android:text="@string/enable_sunscreen_notifications"
             android:theme="@style/Switch"
             tools:checked="false" />
